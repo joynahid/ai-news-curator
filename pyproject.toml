@@ -1,0 +1,15 @@
+[project]
+name = "ag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ag2[openai]>=0.9.6",
+    "httpx>=0.28.1",
+    "lxml[html-clean]>=6.0.0",
+    "newspaper3k>=0.2.8",
+    "playwright>=1.53.0",
+    "python-dotenv>=1.1.1",
+    "serpapi>=0.1.5",
+]
