@@ -29,7 +29,7 @@ async def visit_urls_and_extract_content(urls: List[str]) -> str:
         tasks = [_visit_and_extract(context, url) for url in urls]
         results = await asyncio.gather(*tasks)
         await browser.close()
-    return json.dumps(results, indent=2)
+    return results
 
 
 async def _visit_and_extract(context, url: str) -> Dict[str, Any]:
